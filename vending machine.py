@@ -151,9 +151,9 @@ class VendingMachine:
             item_name = item["item"]
             price = item["price"]
             total_money_used += price
-            print(f'\n                                                                        Item: {item_name} | Price: ${price:.2f}')
+            print('\033[92m' + f'\n                                                                          Item: {item_name} | Price: ${price:.2f}\033[0m')
         print('\033[95m' + '                                                        =========================================================================== \033[0m')
-        print(f'\n                                                                                 Total Money Used: ${total_money_used:.2f}')
+        print('\033[93m' + f'\n                                                                                 Total Money Used: ${total_money_used:.2f}\033[0m')
         print('\033[95m' + '\n                                                        =========================================================================== \033[0m')
 
     def display_menu(self):
