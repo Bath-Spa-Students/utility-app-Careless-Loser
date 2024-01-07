@@ -1,5 +1,4 @@
 import os
-
 class VendingMachine:
     def __init__(self):
         # Initialize inventory for drinks, snacks, and sweets
@@ -90,7 +89,6 @@ class VendingMachine:
         self.balance = float(input('\033[94m' + '\n                                                                              Enter the amount of money: \033[0m'))
         print('\033[96m' + '                                                        ------------------------------------------------------------------------- \033[0m')
 
-    # ... (previous code)
 
     def select_item(self, items):
         """
@@ -128,9 +126,6 @@ class VendingMachine:
         print('\033[96m' + '\n                                                        ------------------------------------------------------------------------- \033[0m')
         print('\033[1;31m' + '\n                                                                                      Invalid code.\n                                                                                    Please try again.\033[0m')
         print('\033[96m' + '\n                                                        ------------------------------------------------------------------------- \033[0m')
-
-# ... (remaining code)
-
 
     def return_change(self):
         """
